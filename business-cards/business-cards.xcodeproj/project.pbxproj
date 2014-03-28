@@ -27,6 +27,15 @@
 		84B64A0E18E4F48C0065539B /* BusinessCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0A18E4F48C0065539B /* BusinessCardView.m */; };
 		84B64A1118E4F49D0065539B /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A1018E4F49D0065539B /* TabBarViewController.m */; };
 		84B64A1218E4F49D0065539B /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A1018E4F49D0065539B /* TabBarViewController.m */; };
+		84C906D718E4FBD4009CD5AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C906D618E4FBD4009CD5AE /* CoreData.framework */; };
+		84C906DB18E4FC5A009CD5AE /* BusinessCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84C906D918E4FC5A009CD5AE /* BusinessCards.xcdatamodeld */; };
+		84C906DC18E4FC5A009CD5AE /* BusinessCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84C906D918E4FC5A009CD5AE /* BusinessCards.xcdatamodeld */; };
+		84C906E118E501DB009CD5AE /* _BusinessCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C906DE18E501DB009CD5AE /* _BusinessCard.m */; };
+		84C906E218E501DB009CD5AE /* _BusinessCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C906DE18E501DB009CD5AE /* _BusinessCard.m */; };
+		84C906E318E501DB009CD5AE /* BusinessCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C906E018E501DB009CD5AE /* BusinessCard.m */; };
+		84C906E418E501DB009CD5AE /* BusinessCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C906E018E501DB009CD5AE /* BusinessCard.m */; };
+		84C906E718E5022A009CD5AE /* BusinessCardsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C906E618E5022A009CD5AE /* BusinessCardsDataModel.m */; };
+		84C906E818E5022A009CD5AE /* BusinessCardsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C906E618E5022A009CD5AE /* BusinessCardsDataModel.m */; };
 		92F03E6CED6A432B8AAC6FB2 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DAF2D87EE49E49BF3C78A /* libPods-Tests.a */; };
 		BF7D135DB7C141D2BC496F25 /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE83933EFE04A9D84A2856F /* MyTest.m */; };
 /* End PBXBuildFile section */
@@ -73,6 +82,14 @@
 		84B64A0A18E4F48C0065539B /* BusinessCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardView.m; sourceTree = "<group>"; };
 		84B64A0F18E4F49D0065539B /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		84B64A1018E4F49D0065539B /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		84C906D618E4FBD4009CD5AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		84C906DA18E4FC5A009CD5AE /* BusinessCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BusinessCards.xcdatamodel; sourceTree = "<group>"; };
+		84C906DD18E501DB009CD5AE /* _BusinessCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _BusinessCard.h; sourceTree = "<group>"; };
+		84C906DE18E501DB009CD5AE /* _BusinessCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _BusinessCard.m; sourceTree = "<group>"; };
+		84C906DF18E501DB009CD5AE /* BusinessCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCard.h; sourceTree = "<group>"; };
+		84C906E018E501DB009CD5AE /* BusinessCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCard.m; sourceTree = "<group>"; };
+		84C906E518E5022A009CD5AE /* BusinessCardsDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardsDataModel.h; sourceTree = "<group>"; };
+		84C906E618E5022A009CD5AE /* BusinessCardsDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardsDataModel.m; sourceTree = "<group>"; };
 		9BE83933EFE04A9D84A2856F /* MyTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MyTest.m; path = Tests/MyTest.m; sourceTree = "<group>"; };
 		A53DAF2D87EE49E49BF3C78A /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4481F0E48E4295A73E48A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -93,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C906D718E4FBD4009CD5AE /* CoreData.framework in Frameworks */,
 				8405939418E4CA9900E9299B /* CoreGraphics.framework in Frameworks */,
 				8405939618E4CA9900E9299B /* UIKit.framework in Frameworks */,
 				8405939218E4CA9900E9299B /* Foundation.framework in Frameworks */,
@@ -137,6 +155,7 @@
 		8405939018E4CA9900E9299B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84C906D618E4FBD4009CD5AE /* CoreData.framework */,
 				8405939118E4CA9900E9299B /* Foundation.framework */,
 				8405939318E4CA9900E9299B /* CoreGraphics.framework */,
 				8405939518E4CA9900E9299B /* UIKit.framework */,
@@ -150,6 +169,7 @@
 		8405939718E4CA9900E9299B /* business-cards */ = {
 			isa = PBXGroup;
 			children = (
+				84C906D818E4FC34009CD5AE /* DataModel */,
 				84B64A0518E4F48C0065539B /* Classes */,
 				840593A018E4CA9900E9299B /* AppDelegate.h */,
 				840593A118E4CA9900E9299B /* AppDelegate.m */,
@@ -207,6 +227,20 @@
 				84B64A0A18E4F48C0065539B /* BusinessCardView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		84C906D818E4FC34009CD5AE /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				84C906DD18E501DB009CD5AE /* _BusinessCard.h */,
+				84C906DE18E501DB009CD5AE /* _BusinessCard.m */,
+				84C906DF18E501DB009CD5AE /* BusinessCard.h */,
+				84C906E018E501DB009CD5AE /* BusinessCard.m */,
+				84C906D918E4FC5A009CD5AE /* BusinessCards.xcdatamodeld */,
+				84C906E518E5022A009CD5AE /* BusinessCardsDataModel.h */,
+				84C906E618E5022A009CD5AE /* BusinessCardsDataModel.m */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		C82D9F67368C40DDA8DDAE78 /* iOS */ = {
@@ -375,11 +409,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C906E718E5022A009CD5AE /* BusinessCardsDataModel.m in Sources */,
 				84B64A1118E4F49D0065539B /* TabBarViewController.m in Sources */,
+				84C906DB18E4FC5A009CD5AE /* BusinessCards.xcdatamodeld in Sources */,
 				84B64A0B18E4F48C0065539B /* BusinessCardViewController.m in Sources */,
 				840593A218E4CA9900E9299B /* AppDelegate.m in Sources */,
+				84C906E118E501DB009CD5AE /* _BusinessCard.m in Sources */,
 				84B64A0D18E4F48C0065539B /* BusinessCardView.m in Sources */,
 				8405939E18E4CA9900E9299B /* main.m in Sources */,
+				84C906E318E501DB009CD5AE /* BusinessCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,11 +433,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C906E818E5022A009CD5AE /* BusinessCardsDataModel.m in Sources */,
 				84B64A1218E4F49D0065539B /* TabBarViewController.m in Sources */,
+				84C906DC18E4FC5A009CD5AE /* BusinessCards.xcdatamodeld in Sources */,
 				84B64A0C18E4F48C0065539B /* BusinessCardViewController.m in Sources */,
 				191EA77915284186A89688DC /* main.m in Sources */,
+				84C906E218E501DB009CD5AE /* _BusinessCard.m in Sources */,
 				84B64A0E18E4F48C0065539B /* BusinessCardView.m in Sources */,
 				BF7D135DB7C141D2BC496F25 /* MyTest.m in Sources */,
+				84C906E418E501DB009CD5AE /* BusinessCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +716,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84C906D918E4FC5A009CD5AE /* BusinessCards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84C906DA18E4FC5A009CD5AE /* BusinessCards.xcdatamodel */,
+			);
+			currentVersion = 84C906DA18E4FC5A009CD5AE /* BusinessCards.xcdatamodel */;
+			path = BusinessCards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8405938618E4CA9900E9299B /* Project object */;
 }
