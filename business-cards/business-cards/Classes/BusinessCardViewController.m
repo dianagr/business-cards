@@ -8,11 +8,13 @@
 
 #import "BusinessCardViewController.h"
 
-@interface BusinessCardViewController ()
-
-@end
-
 @implementation BusinessCardViewController
 
+- (id)init {
+    if (self = [super init]) {
+        self.title = @"Business Cards";
+    }
+    return self;
+}
 
 @end
