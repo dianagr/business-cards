@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "TabBarViewController.h"
+#import "BusinessCardViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,6 +18,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    TabBarViewController *tabBarVC = [[TabBarViewController alloc] init];
+
+    [self.window setRootViewController:tabBarVC];
     [self.window makeKeyAndVisible];
     return YES;
 }
