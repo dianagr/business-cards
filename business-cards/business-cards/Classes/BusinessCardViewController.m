@@ -29,7 +29,7 @@
 #pragma mark UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return [self.dataSource numberOfItems];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -37,7 +37,9 @@
     
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
+        BusinessCard *businessCard = [self.dataSource businessCardForIndex:indexPath.row];
+
+        cell.textLabel.text = businessCard.firstName;
     }
     return cell;
 }

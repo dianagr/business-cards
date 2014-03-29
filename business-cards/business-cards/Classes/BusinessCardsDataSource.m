@@ -42,4 +42,8 @@
     return [self.businessCards objectMaybeNilAtIndex:index];
 }
 
+- (NSInteger)numberOfItems {
+    return [self.businessCards count];
+}
+
 @end

@@ -12,4 +12,6 @@
 
 - (BusinessCard *)businessCardForIndex:(NSInteger)index;
 
+- (NSInteger)numberOfItems;
+
 @end
