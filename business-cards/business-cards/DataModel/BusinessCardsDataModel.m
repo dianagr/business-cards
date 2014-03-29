@@ -74,6 +74,7 @@
             NSException *exception = [NSException exceptionWithName:NSInternalInconsistencyException reason:reason userInfo:userInfo];
             @throw exception;
         }
+        _persistentStoreCoordinator = persistentStoreCoordinator;
     }
     return _persistentStoreCoordinator;
 }

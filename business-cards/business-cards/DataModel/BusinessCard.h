@@ -1,5 +1,7 @@
 #import "_BusinessCard.h"
 
 @interface BusinessCard : _BusinessCard {}
-// Custom logic goes here.
+
++ (BusinessCard *)businessCardFromJSONDictionary:(NSDictionary *)businessCardDictionary;
+
 @end

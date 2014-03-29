@@ -8,24 +8,49 @@
 
 #import "BusinessCardView.h"
 
+@interface BusinessCardView ()
+@property (strong, nonatomic) UIView *contentView;
+@property (strong, nonatomic) UILabel *nameLabel;
+@end
+
 @implementation BusinessCardView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+- (id)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = [UIColor lightGrayColor];
+        _contentView = [[UIView alloc] init];
+        _contentView.backgroundColor = [UIColor whiteColor];
+        [self addSubview:_contentView];
+
+        _nameLabel = [[UILabel alloc] init];
+        _nameLabel.text = @"Some text";
+        [_contentView addSubview:_nameLabel];
+        
+        [self _installConstraints];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (void)_installConstraints {
+    NSDictionary *views = NSDictionaryOfVariableBindings(_contentView, _nameLabel);
+    for (UIView *view in [views allValues]) {
+        view.translatesAutoresizingMaskIntoConstraints = NO;
+    }
+
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_contentView]-|" options:0 metrics:nil views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-100-[_contentView]-100-|" options:0 metrics:nil views:views]];
+    
+    //[self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_nameLabel]-|" options:0 metrics:nil views:views]];
+    //[self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_nameLabel]-|" options:0 metrics:nil views:views]];
 }
-*/
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+
+}
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+}
 
 @end
