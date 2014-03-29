@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 #import "TabBarViewController.h"
-#import "BusinessCardViewController.h"
+#import "BusinessCardListViewController.h"
 #import "BusinessCardsDataModel.h"
 
 @implementation AppDelegate

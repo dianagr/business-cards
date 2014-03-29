@@ -8,13 +8,13 @@
 
 #import "TabBarViewController.h"
 
-#import "BusinessCardViewController.h"
+#import "BusinessCardListViewController.h"
 
 @implementation TabBarViewController
 
 - (id)init {
     if (self = [super init]) {
-        BusinessCardViewController *businessViewController = [[BusinessCardViewController alloc] init];
+        BusinessCardListViewController *businessViewController = [[BusinessCardListViewController alloc] init];
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:businessViewController];
 
         [self setViewControllers:@[navigationController]];

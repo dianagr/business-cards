@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Diana Gren. All rights reserved.
 //
 
-#import "BusinessCardViewController.h"
+#import "BusinessCardListViewController.h"
 
 #import "BusinessCardsDataSource.h"
 #import "BusinessCardView.h"
 
-@interface BusinessCardViewController ()
+@interface BusinessCardListViewController ()
 @property (strong, nonatomic) BusinessCardsDataSource *dataSource;
 @end
 
-@implementation BusinessCardViewController
+@implementation BusinessCardListViewController
 
 - (id)init {
     if (self = [super init]) {

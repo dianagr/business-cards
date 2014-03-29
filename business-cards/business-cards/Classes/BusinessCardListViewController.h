@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Diana Gren. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface BusinessCardViewController : UITableViewController
+@interface BusinessCardListViewController : UITableViewController
 
 @end

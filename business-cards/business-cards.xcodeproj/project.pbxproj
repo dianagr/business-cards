@@ -22,8 +22,8 @@
 		840593B518E4CA9900E9299B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 840593B318E4CA9900E9299B /* InfoPlist.strings */; };
 		840593B718E4CA9900E9299B /* business_cardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840593B618E4CA9900E9299B /* business_cardsTests.m */; };
 		842D792C18E656BA0048DECC /* default_card.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842D792B18E656BA0048DECC /* default_card.plist */; };
-		84B64A0B18E4F48C0065539B /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0718E4F48C0065539B /* BusinessCardViewController.m */; };
-		84B64A0C18E4F48C0065539B /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0718E4F48C0065539B /* BusinessCardViewController.m */; };
+		84B64A0B18E4F48C0065539B /* BusinessCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0718E4F48C0065539B /* BusinessCardListViewController.m */; };
+		84B64A0C18E4F48C0065539B /* BusinessCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0718E4F48C0065539B /* BusinessCardListViewController.m */; };
 		84B64A0D18E4F48C0065539B /* BusinessCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0A18E4F48C0065539B /* BusinessCardView.m */; };
 		84B64A0E18E4F48C0065539B /* BusinessCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0A18E4F48C0065539B /* BusinessCardView.m */; };
 		84B64A1118E4F49D0065539B /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A1018E4F49D0065539B /* TabBarViewController.m */; };
@@ -82,8 +82,8 @@
 		840593B418E4CA9900E9299B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		840593B618E4CA9900E9299B /* business_cardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = business_cardsTests.m; sourceTree = "<group>"; };
 		842D792B18E656BA0048DECC /* default_card.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_card.plist; sourceTree = "<group>"; };
-		84B64A0618E4F48C0065539B /* BusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardViewController.h; sourceTree = "<group>"; };
-		84B64A0718E4F48C0065539B /* BusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardViewController.m; sourceTree = "<group>"; };
+		84B64A0618E4F48C0065539B /* BusinessCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardListViewController.h; sourceTree = "<group>"; };
+		84B64A0718E4F48C0065539B /* BusinessCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardListViewController.m; sourceTree = "<group>"; };
 		84B64A0918E4F48C0065539B /* BusinessCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardView.h; sourceTree = "<group>"; };
 		84B64A0A18E4F48C0065539B /* BusinessCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardView.m; sourceTree = "<group>"; };
 		84B64A0F18E4F49D0065539B /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
@@ -223,8 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				84C906ED18E64F68009CD5AE /* Utils */,
-				84B64A0618E4F48C0065539B /* BusinessCardViewController.h */,
-				84B64A0718E4F48C0065539B /* BusinessCardViewController.m */,
+				84B64A0618E4F48C0065539B /* BusinessCardListViewController.h */,
+				84B64A0718E4F48C0065539B /* BusinessCardListViewController.m */,
 				84B64A0818E4F48C0065539B /* Views */,
 				84B64A0F18E4F49D0065539B /* TabBarViewController.h */,
 				84B64A1018E4F49D0065539B /* TabBarViewController.m */,
@@ -436,7 +436,7 @@
 				84C906E718E5022A009CD5AE /* BusinessCardsDataModel.m in Sources */,
 				84B64A1118E4F49D0065539B /* TabBarViewController.m in Sources */,
 				84C906DB18E4FC5A009CD5AE /* BusinessCards.xcdatamodeld in Sources */,
-				84B64A0B18E4F48C0065539B /* BusinessCardViewController.m in Sources */,
+				84B64A0B18E4F48C0065539B /* BusinessCardListViewController.m in Sources */,
 				840593A218E4CA9900E9299B /* AppDelegate.m in Sources */,
 				84C906E118E501DB009CD5AE /* _BusinessCard.m in Sources */,
 				84C906EB18E64EEB009CD5AE /* BusinessCardsDataSource.m in Sources */,
@@ -462,7 +462,7 @@
 				84C906E818E5022A009CD5AE /* BusinessCardsDataModel.m in Sources */,
 				84B64A1218E4F49D0065539B /* TabBarViewController.m in Sources */,
 				84C906DC18E4FC5A009CD5AE /* BusinessCards.xcdatamodeld in Sources */,
-				84B64A0C18E4F48C0065539B /* BusinessCardViewController.m in Sources */,
+				84B64A0C18E4F48C0065539B /* BusinessCardListViewController.m in Sources */,
 				191EA77915284186A89688DC /* main.m in Sources */,
 				84C906E218E501DB009CD5AE /* _BusinessCard.m in Sources */,
 				84C906EC18E64EEB009CD5AE /* BusinessCardsDataSource.m in Sources */,
