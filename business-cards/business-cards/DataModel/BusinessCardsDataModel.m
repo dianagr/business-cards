@@ -87,4 +87,11 @@
     return _managedObjectModel;
 }
 
+- (void)saveContext {
+    NSError *error;
+    if (![self.mainObjectContext save:&error]) {
+        NSLog(@"Error saving mainObjectContext; %@", error.userInfo);
+    }
+}
+
 @end

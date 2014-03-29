@@ -18,4 +18,6 @@
 - (NSString *)storeFilename;
 - (NSString *)pathToLocalStore;
 
+- (void)saveContext;
+
 @end

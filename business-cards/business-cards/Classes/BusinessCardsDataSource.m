@@ -38,6 +38,10 @@
     return self;
 }
 
+- (void)addBusinessCard:(BusinessCard *)businessCard {
+    [self.businessCards addObject:businessCard];
+}
+
 - (BusinessCard *)businessCardForIndex:(NSInteger)index {
     return [self.businessCards objectMaybeNilAtIndex:index];
 }

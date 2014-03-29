@@ -21,6 +21,7 @@
 		840593AD18E4CA9900E9299B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8405939518E4CA9900E9299B /* UIKit.framework */; };
 		840593B518E4CA9900E9299B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 840593B318E4CA9900E9299B /* InfoPlist.strings */; };
 		840593B718E4CA9900E9299B /* business_cardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840593B618E4CA9900E9299B /* business_cardsTests.m */; };
+		842D792C18E656BA0048DECC /* default_card.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842D792B18E656BA0048DECC /* default_card.plist */; };
 		84B64A0B18E4F48C0065539B /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0718E4F48C0065539B /* BusinessCardViewController.m */; };
 		84B64A0C18E4F48C0065539B /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0718E4F48C0065539B /* BusinessCardViewController.m */; };
 		84B64A0D18E4F48C0065539B /* BusinessCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0A18E4F48C0065539B /* BusinessCardView.m */; };
@@ -80,6 +81,7 @@
 		840593B218E4CA9900E9299B /* business-cardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "business-cardsTests-Info.plist"; sourceTree = "<group>"; };
 		840593B418E4CA9900E9299B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		840593B618E4CA9900E9299B /* business_cardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = business_cardsTests.m; sourceTree = "<group>"; };
+		842D792B18E656BA0048DECC /* default_card.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_card.plist; sourceTree = "<group>"; };
 		84B64A0618E4F48C0065539B /* BusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardViewController.h; sourceTree = "<group>"; };
 		84B64A0718E4F48C0065539B /* BusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardViewController.m; sourceTree = "<group>"; };
 		84B64A0918E4F48C0065539B /* BusinessCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardView.h; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				8405939A18E4CA9900E9299B /* InfoPlist.strings */,
 				8405939D18E4CA9900E9299B /* main.m */,
 				8405939F18E4CA9900E9299B /* business-cards-Prefix.pch */,
+				842D792B18E656BA0048DECC /* default_card.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842D792C18E656BA0048DECC /* default_card.plist in Resources */,
 				8405939C18E4CA9900E9299B /* InfoPlist.strings in Resources */,
 				840593A418E4CA9900E9299B /* Images.xcassets in Resources */,
 			);

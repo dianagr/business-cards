@@ -2,12 +2,6 @@
 
 #import "BusinessCardsDataModel.h"
 
-@interface BusinessCard ()
-
-// Private interface goes here.
-
-@end
-
 
 @implementation BusinessCard
 
@@ -16,7 +10,7 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:[self entityName]];
 
     // Specify criteria for filtering which objects to fetch
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name = %@", businessCardDictionary[@"first_name"]]; //TODO: handle nil.
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"firstName = %@", businessCardDictionary[@"first_name"]]; //TODO: handle nil.
     [fetchRequest setPredicate:predicate];
 
     NSError *error = nil;

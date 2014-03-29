@@ -10,6 +10,7 @@
 
 @interface BusinessCardsDataSource : NSObject
 
+- (void)addBusinessCard:(BusinessCard *)businessCard;
 - (BusinessCard *)businessCardForIndex:(NSInteger)index;
 
 - (NSInteger)numberOfItems;
