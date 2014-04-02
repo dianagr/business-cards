@@ -17,6 +17,12 @@
 
 @implementation BusinessCardListViewController
 
+- (id)init {
+    BusinessCardsDataSource *dataSource = [[BusinessCardsDataSource alloc] init];
+    [dataSource loadSavedData];
+    return [self initWithDataSource:dataSource];
+}
+
 - (instancetype)initWithDataSource:(BusinessCardsDataSource *)dataSource {
     if (self = [super init]) {
         self.title = @"Business Cards";

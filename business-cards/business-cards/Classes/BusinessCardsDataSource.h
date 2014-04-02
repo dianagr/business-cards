@@ -10,6 +10,7 @@
 
 @interface BusinessCardsDataSource : NSObject
 
+- (void)loadSavedData;
 - (void)setBusinessCards:(NSArray *)businessCards;
 - (void)addBusinessCard:(BusinessCard *)businessCard;
 

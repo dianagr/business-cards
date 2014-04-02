@@ -21,21 +21,27 @@
 
 - (id)init {
     if (self = [super init]) {
-        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:[BusinessCard entityName]];
-
-        // Specify how the fetched objects should be sorted
-        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"firstName"
-                                                                       ascending:YES];
-        [fetchRequest setSortDescriptors:[NSArray arrayWithObjects:sortDescriptor, nil]];
-        
-        NSError *error = nil;
-        NSManagedObjectContext *context = [[BusinessCardsDataModel sharedModel] mainObjectContext];
-        _mutableBusinessCards = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
-        if (_mutableBusinessCards == nil) {
-            NSLog(@"Error loading objects from context.");
-        }
+        _mutableBusinessCards = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+- (void)loadSavedData {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:[BusinessCard entityName]];
+    
+    // Specify how the fetched objects should be sorted
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"firstName"
+                                                                   ascending:YES];
+    [fetchRequest setSortDescriptors:[NSArray arrayWithObjects:sortDescriptor, nil]];
+    
+    NSError *error = nil;
+    NSManagedObjectContext *context = [[BusinessCardsDataModel sharedModel] mainObjectContext];
+    NSArray *fetchedData = [context executeFetchRequest:fetchRequest error:&error];
+    if (fetchedData == nil) {
+        NSLog(@"Error loading objects from context.");
+    }
+
+    [self.mutableBusinessCards addObjectsFromArray:fetchedData];
 }
 
 - (void)addBusinessCard:(BusinessCard *)businessCard {
