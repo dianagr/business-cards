@@ -4,4 +4,6 @@
 
 + (BusinessCard *)businessCardFromJSONDictionary:(NSDictionary *)businessCardDictionary;
 
+- (NSString *)fullName;
+
 @end

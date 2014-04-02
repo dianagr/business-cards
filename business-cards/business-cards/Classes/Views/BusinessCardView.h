@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Diana Gren. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
+@class BusinessCard;
 @interface BusinessCardView : UIView
+
+@property (strong, nonatomic) BusinessCard *businessCard;
 
 @end

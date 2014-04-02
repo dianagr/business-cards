@@ -8,6 +8,8 @@
 
 #import "BusinessCardView.h"
 
+#import "BusinessCard.h"
+
 @interface BusinessCardView ()
 @property (strong, nonatomic) UIView *contentView;
 @property (strong, nonatomic) UILabel *nameLabel;
@@ -23,7 +25,6 @@
         [self addSubview:_contentView];
 
         _nameLabel = [[UILabel alloc] init];
-        _nameLabel.text = @"Some text";
         [_contentView addSubview:_nameLabel];
         
         [self _installConstraints];
@@ -46,11 +47,15 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-
 }
 
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
+}
+
+- (void)setBusinessCard:(BusinessCard *)businessCard {
+    _businessCard = businessCard;
+    self.nameLabel.text = [businessCard fullName];
 }
 
 @end
