@@ -13,6 +13,7 @@
 - (void)loadSavedData;
 - (void)setBusinessCards:(NSArray *)businessCards;
 - (void)addBusinessCard:(BusinessCard *)businessCard;
+- (void)removeBusinessCardAtIndex:(NSInteger)index;
 
 - (BusinessCard *)businessCardForIndex:(NSInteger)index;
 

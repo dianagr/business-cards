@@ -48,6 +48,12 @@
     [self.mutableBusinessCards addObject:businessCard];
 }
 
+- (void)removeBusinessCardAtIndex:(NSInteger)index {
+    BusinessCard *businessCard = self.mutableBusinessCards[index];
+    [self.mutableBusinessCards removeObject:businessCard];
+    [businessCard.managedObjectContext deleteObject:businessCard];
+}
+
 - (BusinessCard *)businessCardForIndex:(NSInteger)index {
     return [self.mutableBusinessCards objectMaybeNilAtIndex:index];
 }
