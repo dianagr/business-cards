@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Diana Gren. All rights reserved.
 //
 
+@class BusinessCardsDataSource;
 @interface BusinessCardListViewController : UITableViewController
+
+- (instancetype)initWithDataSource:(BusinessCardsDataSource *)dataSource;
 
 @end

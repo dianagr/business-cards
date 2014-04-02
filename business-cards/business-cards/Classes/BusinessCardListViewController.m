@@ -17,13 +17,13 @@
 
 @implementation BusinessCardListViewController
 
-- (id)init {
+- (instancetype)initWithDataSource:(BusinessCardsDataSource *)dataSource {
     if (self = [super init]) {
         self.title = @"Business Cards";
         
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"New" style:UIBarButtonItemStylePlain target:self action:@selector(addNewCard:)];
         self.tableView.dataSource = self;
-        _dataSource = [[BusinessCardsDataSource alloc] init];
+        _dataSource = dataSource;
     }
     return self;
 }

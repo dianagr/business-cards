@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		191EA77915284186A89688DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D40176123848AEADF34A3F /* main.m */; };
 		2787CEF3BA654FCA90816035 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4481F0E48E4295A73E48A2 /* Foundation.framework */; };
 		8405939218E4CA9900E9299B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8405939118E4CA9900E9299B /* Foundation.framework */; };
 		8405939418E4CA9900E9299B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8405939318E4CA9900E9299B /* CoreGraphics.framework */; };
@@ -22,6 +21,11 @@
 		840593B518E4CA9900E9299B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 840593B318E4CA9900E9299B /* InfoPlist.strings */; };
 		840593B718E4CA9900E9299B /* business_cardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840593B618E4CA9900E9299B /* business_cardsTests.m */; };
 		842D792C18E656BA0048DECC /* default_card.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842D792B18E656BA0048DECC /* default_card.plist */; };
+		842D792F18E659F60048DECC /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D792E18E659F60048DECC /* BusinessCardViewController.m */; };
+		842D793018E659F60048DECC /* BusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D792E18E659F60048DECC /* BusinessCardViewController.m */; };
+		842D793218E65C090048DECC /* BusinessCardListViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D793118E65C090048DECC /* BusinessCardListViewControllerTest.m */; };
+		842D793D18E65EB50048DECC /* BusinessCardViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D793818E65EB50048DECC /* BusinessCardViewControllerTest.m */; };
+		842D793E18E65EB50048DECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D793918E65EB50048DECC /* main.m */; };
 		84B64A0B18E4F48C0065539B /* BusinessCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0718E4F48C0065539B /* BusinessCardListViewController.m */; };
 		84B64A0C18E4F48C0065539B /* BusinessCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0718E4F48C0065539B /* BusinessCardListViewController.m */; };
 		84B64A0D18E4F48C0065539B /* BusinessCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B64A0A18E4F48C0065539B /* BusinessCardView.m */; };
@@ -42,7 +46,6 @@
 		84C906F018E64F9A009CD5AE /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C906EF18E64F9A009CD5AE /* NSArray+Utils.m */; };
 		84C906F118E64F9A009CD5AE /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C906EF18E64F9A009CD5AE /* NSArray+Utils.m */; };
 		92F03E6CED6A432B8AAC6FB2 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A53DAF2D87EE49E49BF3C78A /* libPods-Tests.a */; };
-		BF7D135DB7C141D2BC496F25 /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE83933EFE04A9D84A2856F /* MyTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,11 @@
 		840593B418E4CA9900E9299B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		840593B618E4CA9900E9299B /* business_cardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = business_cardsTests.m; sourceTree = "<group>"; };
 		842D792B18E656BA0048DECC /* default_card.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_card.plist; sourceTree = "<group>"; };
+		842D792D18E659F60048DECC /* BusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardViewController.h; sourceTree = "<group>"; };
+		842D792E18E659F60048DECC /* BusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardViewController.m; sourceTree = "<group>"; };
+		842D793118E65C090048DECC /* BusinessCardListViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardListViewControllerTest.m; sourceTree = "<group>"; };
+		842D793818E65EB50048DECC /* BusinessCardViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardViewControllerTest.m; sourceTree = "<group>"; };
+		842D793918E65EB50048DECC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84B64A0618E4F48C0065539B /* BusinessCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardListViewController.h; sourceTree = "<group>"; };
 		84B64A0718E4F48C0065539B /* BusinessCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardListViewController.m; sourceTree = "<group>"; };
 		84B64A0918E4F48C0065539B /* BusinessCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardView.h; sourceTree = "<group>"; };
@@ -100,10 +108,8 @@
 		84C906EA18E64EEB009CD5AE /* BusinessCardsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardsDataSource.m; sourceTree = "<group>"; };
 		84C906EE18E64F9A009CD5AE /* NSArray+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utils.h"; sourceTree = "<group>"; };
 		84C906EF18E64F9A009CD5AE /* NSArray+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utils.m"; sourceTree = "<group>"; };
-		9BE83933EFE04A9D84A2856F /* MyTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MyTest.m; path = Tests/MyTest.m; sourceTree = "<group>"; };
 		A53DAF2D87EE49E49BF3C78A /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4481F0E48E4295A73E48A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D3D40176123848AEADF34A3F /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Tests/main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +236,8 @@
 				84B64A1018E4F49D0065539B /* TabBarViewController.m */,
 				84C906E918E64EEB009CD5AE /* BusinessCardsDataSource.h */,
 				84C906EA18E64EEB009CD5AE /* BusinessCardsDataSource.m */,
+				842D792D18E659F60048DECC /* BusinessCardViewController.h */,
+				842D792E18E659F60048DECC /* BusinessCardViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -277,10 +285,11 @@
 		D6286E1B273549F8A2589A39 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D3D40176123848AEADF34A3F /* main.m */,
-				9BE83933EFE04A9D84A2856F /* MyTest.m */,
+				842D793818E65EB50048DECC /* BusinessCardViewControllerTest.m */,
+				842D793918E65EB50048DECC /* main.m */,
+				842D793118E65C090048DECC /* BusinessCardListViewControllerTest.m */,
 			);
-			name = Tests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842D792F18E659F60048DECC /* BusinessCardViewController.m in Sources */,
 				84C906E718E5022A009CD5AE /* BusinessCardsDataModel.m in Sources */,
 				84B64A1118E4F49D0065539B /* TabBarViewController.m in Sources */,
 				84C906DB18E4FC5A009CD5AE /* BusinessCards.xcdatamodeld in Sources */,
@@ -459,16 +469,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842D793D18E65EB50048DECC /* BusinessCardViewControllerTest.m in Sources */,
+				842D793018E659F60048DECC /* BusinessCardViewController.m in Sources */,
 				84C906E818E5022A009CD5AE /* BusinessCardsDataModel.m in Sources */,
 				84B64A1218E4F49D0065539B /* TabBarViewController.m in Sources */,
 				84C906DC18E4FC5A009CD5AE /* BusinessCards.xcdatamodeld in Sources */,
+				842D793218E65C090048DECC /* BusinessCardListViewControllerTest.m in Sources */,
 				84B64A0C18E4F48C0065539B /* BusinessCardListViewController.m in Sources */,
-				191EA77915284186A89688DC /* main.m in Sources */,
 				84C906E218E501DB009CD5AE /* _BusinessCard.m in Sources */,
 				84C906EC18E64EEB009CD5AE /* BusinessCardsDataSource.m in Sources */,
+				842D793E18E65EB50048DECC /* main.m in Sources */,
 				84B64A0E18E4F48C0065539B /* BusinessCardView.m in Sources */,
 				84C906F118E64F9A009CD5AE /* NSArray+Utils.m in Sources */,
-				BF7D135DB7C141D2BC496F25 /* MyTest.m in Sources */,
 				84C906E418E501DB009CD5AE /* BusinessCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

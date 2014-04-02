@@ -13,7 +13,7 @@
 
 @interface BusinessCardsDataSource ()
 
-@property (copy, nonatomic) NSMutableArray *businessCards;
+@property (copy, nonatomic) NSMutableArray *mutableBusinessCards;
 
 @end
 
@@ -30,8 +30,8 @@
         
         NSError *error = nil;
         NSManagedObjectContext *context = [[BusinessCardsDataModel sharedModel] mainObjectContext];
-        _businessCards = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
-        if (_businessCards == nil) {
+        _mutableBusinessCards = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
+        if (_mutableBusinessCards == nil) {
             NSLog(@"Error loading objects from context.");
         }
     }
@@ -39,15 +39,19 @@
 }
 
 - (void)addBusinessCard:(BusinessCard *)businessCard {
-    [self.businessCards addObject:businessCard];
+    [self.mutableBusinessCards addObject:businessCard];
 }
 
 - (BusinessCard *)businessCardForIndex:(NSInteger)index {
-    return [self.businessCards objectMaybeNilAtIndex:index];
+    return [self.mutableBusinessCards objectMaybeNilAtIndex:index];
 }
 
 - (NSInteger)numberOfItems {
-    return [self.businessCards count];
+    return [self.mutableBusinessCards count];
+}
+
+- (void)setBusinessCards:(NSArray *)businessCards {
+    _mutableBusinessCards = [businessCards mutableCopy];
 }
 
 @end
