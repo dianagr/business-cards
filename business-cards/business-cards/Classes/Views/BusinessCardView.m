@@ -13,6 +13,7 @@
 @interface BusinessCardView ()
 @property (strong, nonatomic) UIView *contentView;
 @property (strong, nonatomic) UILabel *nameLabel;
+@property (strong, nonatomic) UILabel *emailLabel;
 @end
 
 @implementation BusinessCardView
@@ -27,13 +28,16 @@
         _nameLabel = [[UILabel alloc] init];
         [_contentView addSubview:_nameLabel];
         
+        _emailLabel = [[UILabel alloc] init];
+        [_contentView addSubview:_emailLabel];
+
         [self _installConstraints];
     }
     return self;
 }
 
 - (void)_installConstraints {
-    NSDictionary *views = NSDictionaryOfVariableBindings(_contentView, _nameLabel);
+    NSDictionary *views = NSDictionaryOfVariableBindings(_contentView, _nameLabel, _emailLabel);
     for (UIView *view in [views allValues]) {
         view.translatesAutoresizingMaskIntoConstraints = NO;
     }
@@ -41,8 +45,9 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_contentView]-|" options:0 metrics:nil views:views]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-100-[_contentView]-100-|" options:0 metrics:nil views:views]];
     
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_emailLabel]-|" options:0 metrics:nil views:views]];
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_nameLabel]-|" options:0 metrics:nil views:views]];
-    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_nameLabel]-|" options:0 metrics:nil views:views]];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_nameLabel]-[_emailLabel]-|" options:0 metrics:nil views:views]];
 }
 
 - (void)layoutSubviews {
@@ -56,6 +61,7 @@
 - (void)setBusinessCard:(BusinessCard *)businessCard {
     _businessCard = businessCard;
     self.nameLabel.text = [businessCard fullName];
+    self.emailLabel.text = businessCard.email;
 }
 
 @end

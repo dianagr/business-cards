@@ -11,6 +11,7 @@
     BusinessCard *businessCard = [BusinessCard insertInManagedObjectContext:context];
     businessCard.firstName = businessCardDictionary[@"first_name"];
     businessCard.lastName = businessCardDictionary[@"last_name"];
+    businessCard.email = businessCardDictionary[@"email"];
 
     return businessCard;
 }
