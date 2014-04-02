@@ -9,10 +9,12 @@
 #import "BusinessCardListViewController.h"
 
 #import "BusinessCardsDataSource.h"
-#import "BusinessCardView.h"
+#import "BusinessCardViewController.h"
 
 @interface BusinessCardListViewController ()
 @property (strong, nonatomic) BusinessCardsDataSource *dataSource;
+
+@property (strong, nonatomic) BusinessCardViewController *businessCardViewController;
 @end
 
 @implementation BusinessCardListViewController
@@ -29,7 +31,9 @@
         
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"New" style:UIBarButtonItemStylePlain target:self action:@selector(addNewCard:)];
         self.tableView.dataSource = self;
+        self.tableView.delegate = self;
         _dataSource = dataSource;
+        _businessCardViewController = [[BusinessCardViewController alloc] init];
     }
     return self;
 }
@@ -72,6 +76,13 @@
         [self.dataSource removeBusinessCardAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
+}
+
+#pragma mark UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.businessCardViewController.businessCard = [self.dataSource businessCardForIndex:indexPath.row];
+    [self.navigationController pushViewController:self.businessCardViewController animated:YES];
 }
 
 @end
